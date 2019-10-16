@@ -1,6 +1,6 @@
 {
   "name": "@advanced-rest-client/client-certificates-consumer-mixin",
-  "description": "A common function for element that handles lists of requests like history, saved or menu items",
+  "description": "A common function for element that handles lists of client certificates",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "main": "client-certificates-consumer-mixin.js",
