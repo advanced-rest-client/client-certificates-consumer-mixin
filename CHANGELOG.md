@@ -107,3 +107,29 @@
 * updated Travis configuration to connect to Sauce Labs [5caba96](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/5caba96941c886020f55a05873af7564b5c40e88) by Pawel
 
 
+<a name="1.0.1"></a>
+## [1.0.1](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/compare/1.0.0...1.0.1) (2019-12-23)
+
+### Build
+
+* bumping version [f8ccb0a](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/f8ccb0a9ff35b8aa217ab37246543d0c820135b2) by Pawel Psztyc
+
+
+### Update
+
+* updating dependencies [98d2a87](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/98d2a871f5ad24ca616b2da1a9660211103b1233) by Pawel Psztyc
+* adding types [b9b6987](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/b9b69874ba61d89478a8a9cfdfae60f20328b72c) by Pawel Psztyc
+* updating dependencies [d378978](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/d378978a6e4a1cfa2d19809689f85bd770f80b98) by Pawel Psztyc
+
+
+### Refactor
+
+* moving to src/ an dadding module definition [e15dfba](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/e15dfba2f72fd039b74aabc9a084e81317a38a86) by Pawel Psztyc
+
+
+### Testing
+
+* updating SL configuration [630bdaf](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/630bdaf48bf975692898ac05fa08806fe6825a8b) by Pawel Psztyc
+* updated Travis configuration to connect to Sauce Labs [5caba96](https://github.com/advanced-rest-client/client-certificates-consumer-mixin/commit/5caba96941c886020f55a05873af7564b5c40e88) by Pawel
+
+
