@@ -1,5 +1,5 @@
 import { fixture, assert, html } from '@open-wc/testing';
-import * as sinon from 'sinon/pkg/sinon-esm.js';
+import * as sinon from 'sinon';
 import { DataGenerator } from '@advanced-rest-client/arc-data-generator/arc-data-generator.js';
 import '@advanced-rest-client/arc-models/client-certificate-model.js';
 import './test-element.js';
@@ -7,6 +7,10 @@ import './test-element.js';
 describe('RequestsListMixin', function() {
   async function basicFixture() {
     return await fixture(`<test-element></test-element>`);
+  }
+
+  async function noAutoFixture() {
+    return await fixture(`<test-element noAutoQueryCertificates></test-element>`);
   }
 
   async function queryDataFixture() {
@@ -319,6 +323,15 @@ describe('RequestsListMixin', function() {
       const id = await element._importCert(cert);
       const item = element.items.find((i) => i._id === id);
       assert.typeOf(item, 'object');
+    });
+  });
+
+  describe('#noAutoQueryCertificates', () => {
+    it('does not query for certificates', async () => {
+      const spy = sinon.spy();
+      window.addEventListener('client-certificate-list', spy);
+      await noAutoFixture();
+      assert.isFalse(spy.called);
     });
   });
 });

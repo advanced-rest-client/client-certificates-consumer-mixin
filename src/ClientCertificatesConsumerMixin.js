@@ -38,6 +38,10 @@ export const ClientCertificatesConsumerMixin = (base) => class extends base {
        * True when loading data from the datastore.
        */
       loading: { type: Boolean },
+      /**
+       * Prohibits automated certificates query when the component is initialized.
+       */
+      noAutoQueryCertificates: { type: Boolean },
     };
   }
   /**
@@ -89,7 +93,8 @@ export const ClientCertificatesConsumerMixin = (base) => class extends base {
   }
 
   firstUpdated() {
-    if (!this.items) {
+    const { noAutoQueryCertificates, items } = this;
+    if (!noAutoQueryCertificates && !items) {
       this.reset();
     }
   }
